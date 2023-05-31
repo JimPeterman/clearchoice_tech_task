@@ -40,6 +40,16 @@ def report_model_cv_metrics(model, X, y):
     f1 = np.mean(cv_metrics["test_f1_score"])
 
     metrics = f"Accuracy: {accuracy:.1%}\nRecall: {recall:.1%}\nPrecision: {precision:.1%}\nF1: {f1:.1%}"
+    
+    # If wanting to include STD of the metrics.
+#     accuracy = f"{np.mean(cv_metrics['test_accuracy_score']):.1%} ± {np.std(cv_metrics['test_accuracy_score']):.1%}"
+#     recall = f"{np.mean(cv_metrics['test_recall_score']):.1%} ± {np.std(cv_metrics['test_recall_score']):.1%}"
+#     precision = f"{np.mean(cv_metrics['test_precision_score']):.1%} ± {np.std(cv_metrics['test_precision_score']):.1%}"
+#     f1 = f"{np.mean(cv_metrics['test_f1_score']):.1%} ± {np.std(cv_metrics['test_f1_score']):.1%}"
+#     metrics = (
+#         f"Accuracy: {accuracy}\nRecall: {recall}\nPrecision: {precision}\nF1: {f1}"
+#     )
+    
     return metrics
 
 
@@ -88,4 +98,13 @@ def report_oversampling_model_cv_metrics(model, X, y, sampling_model):
     metrics = f"NEW percentage of 1's: {np.mean(percent_breakdown):.1%}"
     metrics += f"\nAccuracy: {np.mean(accuracy):.1%}\nRecall: {np.mean(recall):.1%}"
     metrics += f"\nPrecision: {np.mean(precision):.1%}\nF1: {np.mean(f1):.1%}"
+    
+    # If wanting to include STD of the metrics.
+#     accuracy_result = f"{np.mean(accuracy):.1%} ± {np.std(accuracy):.1%}"
+#     recall_result = f"{np.mean(recall):.1%} ± {np.std(recall):.1%}"
+#     precision_result = f"{np.mean(precision):.1%} ± {np.std(precision):.1%}"
+#     f1_result = f"{np.mean(f1):.1%} ± {np.std(f1):.1%}"
+
+#     metrics = f"NEW percentage of 1's: {np.mean(percent_breakdown):.1%}"
+#     metrics += f"\nAccuracy: {accuracy_result}\nRecall: {recall_result}\nPrecision: {precision_result}\nF1: {f1_result}"
     return metrics
