@@ -7,8 +7,8 @@ Provided materials:
 - *Data Scientist Candidate Case Study Data.xlsx*: Data and data dictionary
 
 My materials:
-- *EDA.ipynb*: Notebook with data clean-up, EDA, and feature engineering.
+- *eda_data_prep.ipynb*: Notebook with data clean-up, EDA, and feature engineering.
 - *cleaned_case_study_data.csv*: The cleaned data to be used for building the models (created in the EDA notebook).
 - *helpers.py*: Functions for assessing model performance - perform cross validation and report model metrics.
-- *Models.ipynb*: Notebook in which different prediction models were built and then a final model was chosen/tested. 
+- *model_building_testing.ipynb*: Notebook in which different prediction models were built and then a final model was chosen/tested. 
 - *case_study_answers.md*: The instructions include questions about my work/thought process. These are the answers to those questions.
